@@ -37,12 +37,12 @@ function App() {
 
     if (name === undefined) {
     const urlImagem = `https://api.qrserver.com/v1/create-qr-code/?size=250x250&data=${encodeURIComponent(username)}:${ra}:${encodeURIComponent(semestre)}`;
-    console.log(urlImagem)
+
     setConverter(urlImagem)
     } else{
 
     const urlImagem = `https://api.qrserver.com/v1/create-qr-code/?size=250x250&data=${encodeURIComponent(name)}:${ra}:${encodeURIComponent(semestre)}`;
-    console.log(urlImagem)
+
     setConverter(urlImagem)
     }
 
