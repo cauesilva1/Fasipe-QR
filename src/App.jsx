@@ -35,7 +35,8 @@ function App() {
     const ra = inputra.value;
     const photo = data.avatar_url;
 
-    const urlImagem = `https://api.qrserver.com/v1/create-qr-code/?size=250x250&data=${name}:${ra}:${semestre}`;
+    const urlImagem = `https://api.qrserver.com/v1/create-qr-code/?size=250x250&data=${encodeURIComponent(name)}:${ra}:${semestre}`;
+
     
     setConverter(urlImagem)
 
