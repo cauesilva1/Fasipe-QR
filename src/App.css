@@ -284,7 +284,7 @@ button {
 
   body{
     min-height: 100vh;
-    background: url('./assets/img-hero.png');
+    background: url('/img-hero.png');
   }
 
   .container {
