@@ -2,11 +2,11 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
+} 
 
 body {
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
   /* font-family: 'Roboto', sans-serif; */
   font-family: 'Space Grotesk', sans-serif;
   background: url('/img-hero.png');
@@ -20,6 +20,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: row;
   height: 100vh;
   margin: 0 auto;
   gap: 32px;
@@ -65,8 +66,7 @@ label {
   text-transform: uppercase;
 }
 
-
-.input {
+.inputCadastro {
   display: flex;
   align-items: center;
   gap: 12px;
@@ -74,20 +74,21 @@ label {
   margin-bottom: 1rem;
   background: var(--gray-light, #F3F4FE);
   padding: 16px 12px;
+  border-radius: 0.5rem ;
 }
 
 input {
   border: none;
   outline: none;
   width: 100%;
-  color: var(--gray-dark, #202024);
+  color: var(--gray-dark, #b4b4b4);
   font-family: Roboto;
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
   line-height: 160%;
   /* 22.4px */
-  background: var(--gray-light, #F3F4FE);
+  background: var(--gray-light, #f3f4fe00);
 }
 
 input::placeholder {
@@ -279,13 +280,10 @@ button {
   text-transform: uppercase;
 }
 
+
+
 @media (max-width: 450px ) {
   
-
-  body{
-    min-height: 100vh;
-    background: url('/img-hero.png');
-  }
 
   .container {
     display: flex;
